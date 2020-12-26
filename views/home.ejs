@@ -1,0 +1,20 @@
+ <%- include( "partials/header" ) -%> 
+ <div class="text-center">
+   <h1>Welcome   <%=name %>  to library managment system</h1> 
+   <form action="searchbook" method="post">
+    <input name="search"></input>
+    <button>Search</button>
+
+   </form>
+
+    <% bookdata.forEach(element => {%>
+        <input type="hidden" id="custId" name="custId" value=<%=element.bookid%>>
+        <h3><%=element.bookname%> </h3>  
+        <h3><%=element.author%></h3>
+        <h3><%=element.publishdate%></h3>
+        
+        <a href="/addbook?id=<%=element.bookid%>&name=<%=element.bookname%>&author=<%=element.author%>&pub_date=<%=element.publishdate%>" ><button class = "btn btn-primary">Add book</button></a>
+    <% }); %>
+
+</div>
+<%- include( "partials/footer" ) -%> 

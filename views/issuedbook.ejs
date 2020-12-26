@@ -1,0 +1,12 @@
+ <%- include( "partials/header" ) -%> 
+ <div class="text-center">
+ <h2>This are the following books issued :</h2>
+ <% books.forEach(book =>{%>
+    <h3><%=book.bookname%></h3>
+    <h3><%=book.author%></h3>
+    <a href="/deleteissuedbook?id=<%=book.book_id%>"><button class="btn btn-warning">Delete</button></a>
+
+ <%}) %> 
+ 
+</div>
+<%- include( "partials/footer" ) -%> 

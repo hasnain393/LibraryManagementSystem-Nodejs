@@ -1,0 +1,33 @@
+
+[
+    {
+        "bookid":1001,
+        "bookname":"3 mistakes",
+        "publishdate":"26-07-2010",
+        "author":"chetan bhagat"
+     },{
+        "bookid":1002,
+        "bookname":"money heist",
+        "publishdate":"26-07-2010",
+        "author":"professor"
+
+
+    },
+    {
+        "bookid":1003,
+        "bookname":"netflix",
+        "publishdate":"26-07-2010",
+        "author":"breaking bad"
+
+    },
+    {
+        "bookid":1004,
+        "bookname":"networking",
+        "publishdate":"26-07-2010",
+        "author":"rst"
+
+    }
+
+    
+]
+
